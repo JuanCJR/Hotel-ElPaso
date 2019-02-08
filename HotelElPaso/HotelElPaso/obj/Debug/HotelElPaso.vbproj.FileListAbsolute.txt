@@ -14,3 +14,17 @@ C:\Users\jotac\source\repos\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.vbproj
 C:\Users\jotac\source\repos\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.exe
 C:\Users\jotac\source\repos\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.xml
 C:\Users\jotac\source\repos\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.pdb
+C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\bin\Debug\HotelElPaso.exe.config
+C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.exe
+C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.xml
+C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.pdb
+C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\bin\Debug\HotelElPaso.exe
+C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\bin\Debug\HotelElPaso.pdb
+C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\bin\Debug\HotelElPaso.xml
+C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\bin\Debug\System.Net.Http.dll
+C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\bin\Debug\System.Net.Http.xml
+C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\bin\Debug\es\System.Net.Http.resources.dll
+C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.vbprojResolveAssemblyReference.cache
+C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.Login.resources
+C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.Resources.resources
+C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.vbproj.GenerateResource.Cache

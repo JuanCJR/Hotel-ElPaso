@@ -23,4 +23,8 @@ Public Class Login
         End If
 
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        MsgBox("Culo Grande")
+    End Sub
 End Class
