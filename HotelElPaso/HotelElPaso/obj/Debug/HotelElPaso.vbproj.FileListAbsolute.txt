@@ -1,0 +1,16 @@
+C:\Users\jotac\source\repos\HotelElPaso\HotelElPaso\bin\Debug\HotelElPaso.exe.config
+C:\Users\jotac\source\repos\HotelElPaso\HotelElPaso\bin\Debug\HotelElPaso.exe
+C:\Users\jotac\source\repos\HotelElPaso\HotelElPaso\bin\Debug\HotelElPaso.pdb
+C:\Users\jotac\source\repos\HotelElPaso\HotelElPaso\bin\Debug\HotelElPaso.xml
+C:\Users\jotac\source\repos\HotelElPaso\HotelElPaso\bin\Debug\MySql.Data.dll
+C:\Users\jotac\source\repos\HotelElPaso\HotelElPaso\bin\Debug\Google.Protobuf.dll
+C:\Users\jotac\source\repos\HotelElPaso\HotelElPaso\bin\Debug\MySql.Data.xml
+C:\Users\jotac\source\repos\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.vbprojAssemblyReference.cache
+C:\Users\jotac\source\repos\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.Login.resources
+C:\Users\jotac\source\repos\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.Resources.resources
+C:\Users\jotac\source\repos\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.vbproj.GenerateResource.cache
+C:\Users\jotac\source\repos\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.vbproj.CoreCompileInputs.cache
+C:\Users\jotac\source\repos\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.vbproj.CopyComplete
+C:\Users\jotac\source\repos\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.exe
+C:\Users\jotac\source\repos\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.xml
+C:\Users\jotac\source\repos\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.pdb
