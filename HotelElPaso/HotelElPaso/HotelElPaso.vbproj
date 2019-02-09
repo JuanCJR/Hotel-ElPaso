@@ -11,7 +11,7 @@
     <AssemblyName>HotelElPaso</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <PublishUrl>publicar\</PublishUrl>
@@ -91,6 +91,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionMySql.vb" />
+    <Compile Include="Empleados.Designer.vb">
+      <DependentUpon>Empleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hotel El paso inicio.Designer.vb">
+      <DependentUpon>Hotel El paso inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel El paso inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +127,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Hotel El paso inicio.resx">
+      <DependentUpon>Hotel El paso inicio.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>

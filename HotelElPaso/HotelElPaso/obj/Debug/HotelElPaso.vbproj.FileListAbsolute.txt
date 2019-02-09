@@ -21,10 +21,8 @@ C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPa
 C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\bin\Debug\HotelElPaso.exe
 C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\bin\Debug\HotelElPaso.pdb
 C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\bin\Debug\HotelElPaso.xml
-C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\bin\Debug\System.Net.Http.dll
-C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\bin\Debug\System.Net.Http.xml
-C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\bin\Debug\es\System.Net.Http.resources.dll
 C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.vbprojResolveAssemblyReference.cache
 C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.Login.resources
 C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.Resources.resources
 C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.vbproj.GenerateResource.Cache
+C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.Hotel_El_paso_inicio.resources

@@ -10,7 +10,7 @@ Module ConexionMySql
         'Trata de realizar conexion a base de datos'
         Try
             conexion.Close()
-            conexion.ConnectionString = "server=localhost;user=root;password=;database=ejemplo; port=3307"
+            conexion.ConnectionString = "server=localhost;user=root;password=;database=ejemplo; port=3306"
 
             conexion.Open()
 
