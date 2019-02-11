@@ -90,6 +90,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acerca de.Designer.vb">
+      <DependentUpon>Acerca de.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Acerca de.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ConexionMySql.vb" />
     <Compile Include="Empleados.Designer.vb">
       <DependentUpon>Empleados.vb</DependentUpon>
@@ -125,8 +131,23 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Registro de empleados.Designer.vb">
+      <DependentUpon>Registro de empleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registro de empleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservas del hotel.Designer.vb">
+      <DependentUpon>Reservas del hotel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reservas del hotel.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Empleados.resx">
+      <DependentUpon>Empleados.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Hotel El paso inicio.resx">
       <DependentUpon>Hotel El paso inicio.vb</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +159,12 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro de empleados.resx">
+      <DependentUpon>Registro de empleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservas del hotel.resx">
+      <DependentUpon>Reservas del hotel.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
