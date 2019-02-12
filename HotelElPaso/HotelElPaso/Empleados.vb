@@ -18,7 +18,7 @@ Public Class Empleados
         Dim dt As New DataTable
 
         'Creamos consulta SQL'
-        Dim strSQL As String = "Select * from usuarios"
+        Dim strSQL As String = "Select * from empleados"
 
         'Creamos adaptador mysql que necesita la consulta sql y la conexion a la base de datos'
         Dim adp As New MySqlDataAdapter(strSQL, conexion)
@@ -32,6 +32,7 @@ Public Class Empleados
         'Decirle al datagrid que tome los valores de la consulta sql'
 
         Me.DataGridView1.DataSource = ds.Tables("Tabla")
+        Me.DataGridView1.Columns(0).HeaderText = " Codigo de Usuario"
 
 
     End Sub

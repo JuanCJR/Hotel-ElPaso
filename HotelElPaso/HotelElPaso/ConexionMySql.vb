@@ -4,7 +4,9 @@ Module ConexionMySql
 
     'Creacion de objecto MysqlConneciont para manejar conexion a mysql'
     Public conexion As New MySqlConnection
+    'Creacion deobjeto MySqlCommand para ejecutar comandos sql
     Public cmd As New MySqlCommand
+
     Public dr2 As MySqlDataReader
 
     Public Sub Conectar()

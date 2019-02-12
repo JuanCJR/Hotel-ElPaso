@@ -82,7 +82,9 @@ Public Class Hotel_El_paso_inicio
     Private m_ChildFormNumber As Integer
 
     Private Sub EmpleadosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EmpleadosToolStripMenuItem.Click
+
         Empleados.Show()
+
     End Sub
 
     Private Sub AdministracionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AdministracionToolStripMenuItem.Click
