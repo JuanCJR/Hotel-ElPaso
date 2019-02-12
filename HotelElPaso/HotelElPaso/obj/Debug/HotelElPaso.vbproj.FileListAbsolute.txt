@@ -26,3 +26,6 @@ C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPa
 C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.Resources.resources
 C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.vbproj.GenerateResource.Cache
 C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.Hotel_El_paso_inicio.resources
+C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.Empleados.resources
+C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.Registro_de_empleados.resources
+C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.Reservas_del_hotel.resources

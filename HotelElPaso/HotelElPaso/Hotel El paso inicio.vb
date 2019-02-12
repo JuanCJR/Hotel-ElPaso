@@ -88,4 +88,16 @@ Public Class Hotel_El_paso_inicio
     Private Sub AdministracionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AdministracionToolStripMenuItem.Click
 
     End Sub
+
+    Private Sub IniciarNuevaReservaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles IniciarNuevaReservaToolStripMenuItem.Click
+        Reservas_del_hotel.Show()
+    End Sub
+
+    Private Sub AcercaDeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AcercaDeToolStripMenuItem.Click
+        Acerca_de.Show()
+    End Sub
+
+    Private Sub RegistroDeEmpleadosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistroDeEmpleadosToolStripMenuItem.Click
+        Registro_de_empleados.Show()
+    End Sub
 End Class

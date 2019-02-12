@@ -25,18 +25,20 @@ Partial Class Hotel_El_paso_inicio
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.MenuStrip = New System.Windows.Forms.MenuStrip()
+        Me.OpcionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.InformacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AdministracionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RealizarReservaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MiCuentaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SobreMiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
-        Me.OpcionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InformacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AdministracionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RealizarReservaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MiCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MiCuentaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SobreMiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.IniciarNuevaReservaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RegistroDeEmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.SuspendLayout()
@@ -49,6 +51,59 @@ Partial Class Hotel_El_paso_inicio
         Me.MenuStrip.Size = New System.Drawing.Size(632, 24)
         Me.MenuStrip.TabIndex = 5
         Me.MenuStrip.Text = "MenuStrip"
+        '
+        'OpcionesToolStripMenuItem
+        '
+        Me.OpcionesToolStripMenuItem.Name = "OpcionesToolStripMenuItem"
+        Me.OpcionesToolStripMenuItem.Size = New System.Drawing.Size(69, 20)
+        Me.OpcionesToolStripMenuItem.Text = "Opciones"
+        '
+        'InformacionToolStripMenuItem
+        '
+        Me.InformacionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AcercaDeToolStripMenuItem})
+        Me.InformacionToolStripMenuItem.Name = "InformacionToolStripMenuItem"
+        Me.InformacionToolStripMenuItem.Size = New System.Drawing.Size(84, 20)
+        Me.InformacionToolStripMenuItem.Text = "Informacion"
+        '
+        'AcercaDeToolStripMenuItem
+        '
+        Me.AcercaDeToolStripMenuItem.Name = "AcercaDeToolStripMenuItem"
+        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.AcercaDeToolStripMenuItem.Text = "Acerca de Hotel el paso"
+        '
+        'AdministracionToolStripMenuItem
+        '
+        Me.AdministracionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmpleadosToolStripMenuItem, Me.RegistroDeEmpleadosToolStripMenuItem})
+        Me.AdministracionToolStripMenuItem.Name = "AdministracionToolStripMenuItem"
+        Me.AdministracionToolStripMenuItem.Size = New System.Drawing.Size(100, 20)
+        Me.AdministracionToolStripMenuItem.Text = "Administracion"
+        '
+        'EmpleadosToolStripMenuItem
+        '
+        Me.EmpleadosToolStripMenuItem.Name = "EmpleadosToolStripMenuItem"
+        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EmpleadosToolStripMenuItem.Text = "Empleados"
+        '
+        'RealizarReservaToolStripMenuItem
+        '
+        Me.RealizarReservaToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.RealizarReservaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.IniciarNuevaReservaToolStripMenuItem})
+        Me.RealizarReservaToolStripMenuItem.Name = "RealizarReservaToolStripMenuItem"
+        Me.RealizarReservaToolStripMenuItem.Size = New System.Drawing.Size(93, 20)
+        Me.RealizarReservaToolStripMenuItem.Text = "Reservaciones"
+        '
+        'MiCuentaToolStripMenuItem1
+        '
+        Me.MiCuentaToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SobreMiToolStripMenuItem})
+        Me.MiCuentaToolStripMenuItem1.Name = "MiCuentaToolStripMenuItem1"
+        Me.MiCuentaToolStripMenuItem1.Size = New System.Drawing.Size(72, 20)
+        Me.MiCuentaToolStripMenuItem1.Text = "Mi cuenta"
+        '
+        'SobreMiToolStripMenuItem
+        '
+        Me.SobreMiToolStripMenuItem.Name = "SobreMiToolStripMenuItem"
+        Me.SobreMiToolStripMenuItem.Size = New System.Drawing.Size(121, 22)
+        Me.SobreMiToolStripMenuItem.Text = "Sobre mi"
         '
         'StatusStrip
         '
@@ -65,63 +120,23 @@ Partial Class Hotel_El_paso_inicio
         Me.ToolStripStatusLabel.Size = New System.Drawing.Size(42, 17)
         Me.ToolStripStatusLabel.Text = "Estado"
         '
-        'OpcionesToolStripMenuItem
-        '
-        Me.OpcionesToolStripMenuItem.Name = "OpcionesToolStripMenuItem"
-        Me.OpcionesToolStripMenuItem.Size = New System.Drawing.Size(69, 20)
-        Me.OpcionesToolStripMenuItem.Text = "Opciones"
-        '
-        'InformacionToolStripMenuItem
-        '
-        Me.InformacionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AcercaDeToolStripMenuItem})
-        Me.InformacionToolStripMenuItem.Name = "InformacionToolStripMenuItem"
-        Me.InformacionToolStripMenuItem.Size = New System.Drawing.Size(84, 20)
-        Me.InformacionToolStripMenuItem.Text = "Informacion"
-        '
-        'AdministracionToolStripMenuItem
-        '
-        Me.AdministracionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmpleadosToolStripMenuItem})
-        Me.AdministracionToolStripMenuItem.Name = "AdministracionToolStripMenuItem"
-        Me.AdministracionToolStripMenuItem.Size = New System.Drawing.Size(100, 20)
-        Me.AdministracionToolStripMenuItem.Text = "Administracion"
-        '
-        'RealizarReservaToolStripMenuItem
-        '
-        Me.RealizarReservaToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.RealizarReservaToolStripMenuItem.Name = "RealizarReservaToolStripMenuItem"
-        Me.RealizarReservaToolStripMenuItem.Size = New System.Drawing.Size(99, 20)
-        Me.RealizarReservaToolStripMenuItem.Text = "Realizar reserva"
-        '
-        'EmpleadosToolStripMenuItem
-        '
-        Me.EmpleadosToolStripMenuItem.Name = "EmpleadosToolStripMenuItem"
-        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.EmpleadosToolStripMenuItem.Text = "Empleados"
-        '
         'MiCuentaToolStripMenuItem
         '
         Me.MiCuentaToolStripMenuItem.Name = "MiCuentaToolStripMenuItem"
         Me.MiCuentaToolStripMenuItem.Size = New System.Drawing.Size(32, 19)
         Me.MiCuentaToolStripMenuItem.Text = "Mi cuenta"
         '
-        'AcercaDeToolStripMenuItem
+        'IniciarNuevaReservaToolStripMenuItem
         '
-        Me.AcercaDeToolStripMenuItem.Name = "AcercaDeToolStripMenuItem"
-        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.AcercaDeToolStripMenuItem.Text = "Acerca de"
+        Me.IniciarNuevaReservaToolStripMenuItem.Name = "IniciarNuevaReservaToolStripMenuItem"
+        Me.IniciarNuevaReservaToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+        Me.IniciarNuevaReservaToolStripMenuItem.Text = "Iniciar nueva reserva"
         '
-        'MiCuentaToolStripMenuItem1
+        'RegistroDeEmpleadosToolStripMenuItem
         '
-        Me.MiCuentaToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SobreMiToolStripMenuItem})
-        Me.MiCuentaToolStripMenuItem1.Name = "MiCuentaToolStripMenuItem1"
-        Me.MiCuentaToolStripMenuItem1.Size = New System.Drawing.Size(72, 20)
-        Me.MiCuentaToolStripMenuItem1.Text = "Mi cuenta"
-        '
-        'SobreMiToolStripMenuItem
-        '
-        Me.SobreMiToolStripMenuItem.Name = "SobreMiToolStripMenuItem"
-        Me.SobreMiToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.SobreMiToolStripMenuItem.Text = "Sobre mi"
+        Me.RegistroDeEmpleadosToolStripMenuItem.Name = "RegistroDeEmpleadosToolStripMenuItem"
+        Me.RegistroDeEmpleadosToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.RegistroDeEmpleadosToolStripMenuItem.Text = "Registro de empleados"
         '
         'Hotel_El_paso_inicio
         '
@@ -155,5 +170,7 @@ Partial Class Hotel_El_paso_inicio
     Friend WithEvents MiCuentaToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SobreMiToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MiCuentaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents IniciarNuevaReservaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents RegistroDeEmpleadosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
