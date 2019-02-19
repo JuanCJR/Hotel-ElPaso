@@ -82,7 +82,7 @@ Public Class Hotel_El_paso_inicio
     Private m_ChildFormNumber As Integer
 
     Private Sub EmpleadosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EmpleadosToolStripMenuItem.Click
-
+        Empleados.MdiParent = Me
         Empleados.Show()
 
     End Sub
@@ -92,6 +92,7 @@ Public Class Hotel_El_paso_inicio
     End Sub
 
     Private Sub IniciarNuevaReservaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles IniciarNuevaReservaToolStripMenuItem.Click
+        Reservas_del_hotel.MdiParent = Me
         Reservas_del_hotel.Show()
     End Sub
 
@@ -100,6 +101,16 @@ Public Class Hotel_El_paso_inicio
     End Sub
 
     Private Sub RegistroDeEmpleadosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistroDeEmpleadosToolStripMenuItem.Click
+        Registro_de_empleados.MdiParent = Me
+
         Registro_de_empleados.Show()
+    End Sub
+
+    Private Sub SobreMiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SobreMiToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub RealizarReservaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RealizarReservaToolStripMenuItem.Click
+
     End Sub
 End Class
