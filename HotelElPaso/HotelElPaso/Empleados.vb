@@ -26,4 +26,23 @@ Public Class Empleados
         Me.DataGridView1.DataSource = ds.Tables("tabla")
         Me.DataGridView1.Columns(0).HeaderText = " Codigo de Usuario"
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Registro_de_empleados.Show()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        'llamamos a la funcion'
+        Me.DataGridView1.DataSource = ConsultaBuscar("Empleados", "cod_usu", TextBox1.Text).Tables("Tabla")
+        Try
+            Me.DataGridView1.Rows(1).ToString()
+        Catch ex As Exception
+            If ex.ToString.Contains("fuera del intervalo") Then
+                MsgBox("El registro que intenta buscar no existe")
+            Else
+                MsgBox(ex.ToString)
+            End If
+
+        End Try
+    End Sub
 End Class
