@@ -28,9 +28,10 @@ Partial Class Reservas_del_hotel
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Reservas = New System.Windows.Forms.ListBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -66,7 +67,7 @@ Partial Class Reservas_del_hotel
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(139, 23)
         Me.Button4.TabIndex = 3
-        Me.Button4.Text = "Actualizar reservaciones"
+        Me.Button4.Text = "Buscar una reservacion"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Label1
@@ -85,14 +86,6 @@ Partial Class Reservas_del_hotel
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 5
         '
-        'Reservas
-        '
-        Me.Reservas.FormattingEnabled = True
-        Me.Reservas.Location = New System.Drawing.Point(22, 22)
-        Me.Reservas.Name = "Reservas"
-        Me.Reservas.Size = New System.Drawing.Size(274, 355)
-        Me.Reservas.TabIndex = 6
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -109,14 +102,22 @@ Partial Class Reservas_del_hotel
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 8
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 12)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(281, 362)
+        Me.DataGridView1.TabIndex = 9
+        '
         'Reservas_del_hotel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(610, 426)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Reservas)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button4)
@@ -125,6 +126,7 @@ Partial Class Reservas_del_hotel
         Me.Controls.Add(Me.Button1)
         Me.Name = "Reservas_del_hotel"
         Me.Text = "Reservas_del_hotel"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -135,7 +137,7 @@ Partial Class Reservas_del_hotel
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Reservas As System.Windows.Forms.ListBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
 End Class

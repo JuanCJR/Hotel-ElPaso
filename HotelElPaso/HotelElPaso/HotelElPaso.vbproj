@@ -97,6 +97,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ConexionMySql.vb" />
+    <Compile Include="Editar empleado.Designer.vb">
+      <DependentUpon>Editar empleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Editar empleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Empleados.Designer.vb">
       <DependentUpon>Empleados.vb</DependentUpon>
     </Compile>
@@ -137,14 +143,44 @@
     <Compile Include="Registro de empleados.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Registro de empleados2.Designer.vb">
+      <DependentUpon>Registro de empleados2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registro de empleados2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservaciones_reali.Designer.vb">
+      <DependentUpon>Reservaciones_reali.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reservaciones_reali.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reservas del hotel.Designer.vb">
       <DependentUpon>Reservas del hotel.vb</DependentUpon>
     </Compile>
     <Compile Include="Reservas del hotel.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reservas del hotel2.Designer.vb">
+      <DependentUpon>Reservas del hotel2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reservas del hotel2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sobre mi.Designer.vb">
+      <DependentUpon>Sobre mi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sobre mi.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Acerca de.resx">
+      <DependentUpon>Acerca de.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editar empleado.resx">
+      <DependentUpon>Editar empleado.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Empleados.resx">
       <DependentUpon>Empleados.vb</DependentUpon>
     </EmbeddedResource>
@@ -163,8 +199,17 @@
     <EmbeddedResource Include="Registro de empleados.resx">
       <DependentUpon>Registro de empleados.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Registro de empleados2.resx">
+      <DependentUpon>Registro de empleados2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reservas del hotel.resx">
       <DependentUpon>Reservas del hotel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservas del hotel2.resx">
+      <DependentUpon>Reservas del hotel2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sobre mi.resx">
+      <DependentUpon>Sobre mi.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
