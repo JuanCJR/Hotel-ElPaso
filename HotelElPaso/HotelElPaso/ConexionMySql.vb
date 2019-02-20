@@ -8,6 +8,10 @@ Module ConexionMySql
     Public cmd As New MySqlCommand
     Public dr2 As MySqlDataReader
 
+    Private Property codigo As String
+
+    Private Property codigo_val As String
+
     Public Sub Conectar()
 
         'Trata de realizar conexion a base de datos'
@@ -22,6 +26,39 @@ Module ConexionMySql
         End Try
 
     End Sub
+
+    Public Function Consultar(ByRef SQLC As String) As MySqlDataReader
+
+
+        cmd.Connection = conexion
+        cmd.CommandType = CommandType.Text
+
+
+
+        cmd.CommandText = SQLC
+
+
+
+        Try
+            dr2 = cmd.ExecuteReader
+            'dr2.Read()
+
+            'If dr2.HasRows Then
+            'While dr2.Read()
+            'MsgBox(dr2(0).ToString + " " + dr2(1).ToString + " " + dr2(3).ToString)
+            '
+            'End While
+            'Else
+            'MsgBox("No Existen registros para la consulta")
+
+            'End If
+
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+
+        Return dr2
+    End Function
     Public Function ConsultaBuscar(ByRef Tabla As String, ByRef nom_c As String, ByRef Codigo As Integer) As DataSet
         'creamos dataset'
         Dim ds As New DataSet
@@ -52,42 +89,50 @@ Module ConexionMySql
     'valor del campo llave primaria'
     'esta funcion retorna como MySqlCommand para utilizarse posteriormente'
 
-    Public Function consultaEditar(ByRef tabla As String, campo1 As String, ByRef newval As String, ByRef codigo As String, codval As String) As MySqlCommand
-        Dim Comando As MySqlCommand
-        Dim sql As String = ""
+    Public Function consultaEditar(ByRef tabla As String, sql As String) As MySqlCommand
+        Conectar()
+        Dim Comando As New MySqlCommand
 
-        'indicar tipo de entrada del comando sql'
+        'Indicar tipo de entrada del comando sql
         Comando.CommandType = CommandType.Text
 
-        'enlazar el comando con la conexion a la base de datos'
+        'enlazar el comando con la conexion a la base de datos
         Comando.Connection = conexion
 
-        'Definimos la consulta sql para actualizar o editar'
-        sql = "UPDATE " & tabla & " SET " & campo1 & "=" & newval & " WHERE " & codigo & "=" & codval
+
         Comando.CommandText = sql
+
+
         Return Comando
 
     End Function
 
-    Public Function reader(ByRef tabla As String) As MySqlDataReader
+    Public Function reader(ByRef tabla As String, ByRef codigo As String, ByRef codigo_val As String) As MySqlDataReader
         Conectar()
+
         cmd.Connection = conexion
         cmd.CommandType = CommandType.Text
 
-        cmd.CommandText = "Select * from " & tabla
+
+
+        cmd.CommandText = "Select * from " & tabla & " where " & codigo & "=" & codigo_val
+
+
         Try
             dr2 = cmd.ExecuteReader
-            dr2.read()
+            dr2.Read()
+
 
         Catch ex As Exception
             MsgBox(ex.ToString)
-
-
         End Try
+
         Return dr2
+
     End Function
 
     Public Function ConsultaSelect(ByRef tabla) As DataSet
+        Conectar()
         'creamos data set' 
         Dim ds2 As New DataSet
         'creamos data table'

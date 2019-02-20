@@ -63,7 +63,7 @@
 
             'definimos la consulta sql para insertar'
             sql = "INSERT INTO registros VALUES (" & id & ",'" & nombre & "','" & apellido & "','" & ci & "','" & correo
-            sql = sql & "','" & tlf & "','" & direccion & "'," & tipohab & ")"
+            sql = sql & "','" & tlf & "','" & direccion & "','" & tipohab & "')"
 
             cmd.CommandText = sql
             Try

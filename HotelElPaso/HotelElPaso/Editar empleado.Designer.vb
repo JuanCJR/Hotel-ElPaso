@@ -48,11 +48,11 @@ Partial Class Editar_empleado
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(27, 329)
+        Me.Button1.Location = New System.Drawing.Point(209, 11)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 37
-        Me.Button1.Text = "Actualizar"
+        Me.Button1.Text = "Buscar"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'TextBox9
@@ -202,25 +202,25 @@ Partial Class Editar_empleado
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(227, 13)
+        Me.DataGridView1.Location = New System.Drawing.Point(290, 13)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(298, 299)
+        Me.DataGridView1.Size = New System.Drawing.Size(431, 299)
         Me.DataGridView1.TabIndex = 38
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(127, 328)
+        Me.Button2.Location = New System.Drawing.Point(12, 363)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 39
-        Me.Button2.Text = "Borrar"
+        Me.Button2.Text = "Actualizar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Editar_empleado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(537, 363)
+        Me.ClientSize = New System.Drawing.Size(733, 398)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button1)
