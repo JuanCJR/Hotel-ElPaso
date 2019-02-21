@@ -29,6 +29,7 @@ Partial Class Registro_de_empleados
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Button4 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -77,7 +78,7 @@ Partial Class Registro_de_empleados
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(99, 381)
+        Me.Button3.Location = New System.Drawing.Point(96, 381)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 6
@@ -95,11 +96,21 @@ Partial Class Registro_de_empleados
         Me.DataGridView1.Size = New System.Drawing.Size(562, 269)
         Me.DataGridView1.TabIndex = 7
         '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(177, 381)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 8
+        Me.Button4.Text = "Borrar"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'Registro_de_empleados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(586, 416)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -121,4 +132,5 @@ Partial Class Registro_de_empleados
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents Button4 As System.Windows.Forms.Button
 End Class

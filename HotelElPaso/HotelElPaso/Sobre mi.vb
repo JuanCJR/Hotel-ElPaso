@@ -18,13 +18,6 @@
         TextBox1.Clear()
     End Sub
 
-    Private Sub CheckBox3_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox3.CheckedChanged
-        If CheckBox3.Checked = True Then
-            TextBox1.Text = "Estudiante de la universidad IUPSM de cedulta taltal"
-            TextBox1.Enabled = False
-        End If
-    End Sub
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
     End Sub

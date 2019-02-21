@@ -26,7 +26,6 @@ Partial Class Sobre_mi
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -67,16 +66,6 @@ Partial Class Sobre_mi
         Me.CheckBox2.Text = "Yoalexis"
         Me.CheckBox2.UseVisualStyleBackColor = True
         '
-        'CheckBox3
-        '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(326, 23)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(71, 17)
-        Me.CheckBox3.TabIndex = 4
-        Me.CheckBox3.Text = "Fernando"
-        Me.CheckBox3.UseVisualStyleBackColor = True
-        '
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(14, 226)
@@ -92,7 +81,6 @@ Partial Class Sobre_mi
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(466, 261)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.CheckBox3)
         Me.Controls.Add(Me.CheckBox2)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.TextBox1)
@@ -107,6 +95,5 @@ Partial Class Sobre_mi
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox3 As System.Windows.Forms.CheckBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class

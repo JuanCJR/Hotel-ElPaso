@@ -34,3 +34,7 @@ C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPa
 C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.Acerca_de.resources
 C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.Sobre_mi.resources
 C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.Reservas_del_hotel2.resources
+C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.Borrar_empleado.resources
+C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.Reservaciones_reali.resources
+C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.Editar_reservacion.resources
+C:\Users\Junco\Desktop\Proyecto programacion\Hotel-ElPaso-Junco-Branch\HotelElPaso\HotelElPaso\obj\Debug\HotelElPaso.Eliminar_reservacion.resources

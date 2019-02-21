@@ -46,6 +46,16 @@
             Dim salario As Integer
             Dim sql As String = ""
 
+            id = TextBox1.Text
+            nombre = TextBox2.Text
+            apellido = TextBox3.Text
+            ci = TextBox4.Text
+            correo = TextBox5.Text
+            tlf = TextBox6.Text
+            direccion = TextBox7.Text
+            cargo = TextBox8.Text
+            salario = TextBox9.Text
+
 
             'indicar el tipo de entrada del comando sql'
             cmd.CommandType = CommandType.Text
