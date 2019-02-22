@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class Login
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +20,9 @@ Partial Class Login
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.iniciar = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -31,29 +32,35 @@ Partial Class Login
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.borrar = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'iniciar
         '
-        Me.iniciar.Location = New System.Drawing.Point(48, 298)
+        Me.iniciar.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.iniciar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.iniciar.Font = New System.Drawing.Font("Perpetua Titling MT", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.iniciar.Location = New System.Drawing.Point(208, 345)
         Me.iniciar.Name = "iniciar"
-        Me.iniciar.Size = New System.Drawing.Size(106, 48)
+        Me.iniciar.Size = New System.Drawing.Size(106, 49)
         Me.iniciar.TabIndex = 0
         Me.iniciar.Text = "Iniciar"
         Me.iniciar.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
+        Me.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Controls.Add(Me.TextBox2)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Location = New System.Drawing.Point(20, 121)
+        Me.GroupBox1.Font = New System.Drawing.Font("Perpetua Titling MT", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(180, 159)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(499, 155)
+        Me.GroupBox1.Size = New System.Drawing.Size(545, 164)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Inicio de sesion"
@@ -61,9 +68,9 @@ Partial Class Login
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(0, 111)
+        Me.Label1.Location = New System.Drawing.Point(6, 111)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(95, 13)
+        Me.Label1.Size = New System.Drawing.Size(136, 15)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Tipo de empleado:"
         '
@@ -71,66 +78,89 @@ Partial Class Login
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"EMPLEADO", "ADMIN"})
-        Me.ComboBox1.Location = New System.Drawing.Point(98, 108)
+        Me.ComboBox1.Location = New System.Drawing.Point(153, 109)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 23)
         Me.ComboBox1.TabIndex = 4
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(98, 66)
+        Me.TextBox2.Location = New System.Drawing.Point(153, 68)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(288, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(288, 22)
         Me.TextBox2.TabIndex = 3
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(98, 27)
+        Me.TextBox1.Location = New System.Drawing.Point(153, 29)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(288, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(288, 22)
         Me.TextBox1.TabIndex = 2
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(6, 69)
+        Me.Label3.Location = New System.Drawing.Point(6, 68)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(64, 13)
+        Me.Label3.Size = New System.Drawing.Size(100, 15)
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Contraseña:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(6, 30)
+        Me.Label2.Location = New System.Drawing.Point(6, 29)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(46, 13)
+        Me.Label2.Size = New System.Drawing.Size(70, 15)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Usuario:"
         '
         'borrar
         '
-        Me.borrar.Location = New System.Drawing.Point(327, 298)
+        Me.borrar.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.borrar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.borrar.Font = New System.Drawing.Font("Perpetua Titling MT", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.borrar.Location = New System.Drawing.Point(488, 345)
         Me.borrar.Name = "borrar"
-        Me.borrar.Size = New System.Drawing.Size(107, 48)
+        Me.borrar.Size = New System.Drawing.Size(106, 49)
         Me.borrar.TabIndex = 4
         Me.borrar.Text = "Borrar"
         Me.borrar.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Honeydew
+        Me.Label4.Font = New System.Drawing.Font("Perpetua Titling MT", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(364, 67)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(183, 26)
+        Me.Label4.TabIndex = 5
+        Me.Label4.Text = "HOTEL EL PASO"
         '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(566, 384)
+        Me.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(855, 479)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.borrar)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.iniciar)
+        Me.DoubleBuffered = True
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Login"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -143,4 +173,5 @@ Partial Class Login
     Friend WithEvents borrar As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label4 As Label
 End Class

@@ -96,11 +96,29 @@
     <Compile Include="Acerca de.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConexionMySql.vb" />
-    <Compile Include="EditarEmpleados.Designer.vb">
-      <DependentUpon>EditarEmpleados.vb</DependentUpon>
+    <Compile Include="Borrar empleado.Designer.vb">
+      <DependentUpon>Borrar empleado.vb</DependentUpon>
     </Compile>
-    <Compile Include="EditarEmpleados.vb">
+    <Compile Include="Borrar empleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConexionMySql.vb" />
+    <Compile Include="Editar empleado.Designer.vb">
+      <DependentUpon>Editar empleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Editar empleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editar reservacion.Designer.vb">
+      <DependentUpon>Editar reservacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Editar reservacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar reservacion.Designer.vb">
+      <DependentUpon>Eliminar reservacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar reservacion.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Empleados.Designer.vb">
@@ -143,16 +161,58 @@
     <Compile Include="Registro de empleados.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Registro de empleados2.Designer.vb">
+      <DependentUpon>Registro de empleados2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registro de empleados2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservaciones_reali.Designer.vb">
+      <DependentUpon>Reservaciones_reali.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reservaciones_reali.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reservas del hotel.Designer.vb">
       <DependentUpon>Reservas del hotel.vb</DependentUpon>
     </Compile>
     <Compile Include="Reservas del hotel.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reservas del hotel2.Designer.vb">
+      <DependentUpon>Reservas del hotel2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reservas del hotel2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sobre mi.Designer.vb">
+      <DependentUpon>Sobre mi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sobre mi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="EditarEmpleados.resx">
-      <DependentUpon>EditarEmpleados.vb</DependentUpon>
+    <EmbeddedResource Include="Acerca de.resx">
+      <DependentUpon>Acerca de.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrar empleado.resx">
+      <DependentUpon>Borrar empleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editar empleado.resx">
+      <DependentUpon>Editar empleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editar reservacion.resx">
+      <DependentUpon>Editar reservacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar reservacion.resx">
+      <DependentUpon>Eliminar reservacion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empleados.resx">
       <DependentUpon>Empleados.vb</DependentUpon>
@@ -172,8 +232,23 @@
     <EmbeddedResource Include="Registro de empleados.resx">
       <DependentUpon>Registro de empleados.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Registro de empleados2.resx">
+      <DependentUpon>Registro de empleados2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservaciones_reali.resx">
+      <DependentUpon>Reservaciones_reali.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reservas del hotel.resx">
       <DependentUpon>Reservas del hotel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservas del hotel2.resx">
+      <DependentUpon>Reservas del hotel2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sobre mi.resx">
+      <DependentUpon>Sobre mi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -1,8 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class Login
-
-
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles iniciar.Click
         Dim usuario As String
         Dim clave As String
@@ -10,32 +7,24 @@ Public Class Login
         usuario = TextBox1.Text
         clave = TextBox2.Text
         tipo_usu = ComboBox1.Text
-
-
+       
 
         'Validador de ejecucion de la consulta'
-        If TextBox1.Text = "" Or TextBox2.Text = "" Then
-
-
-            MsgBox("Por favor Ingrese todos los datos solicitados")
-
-        ElseIf ComboBox1.Text = "" Then
-
-            MsgBox("Por favor Ingrese el tipo de trabajador")
-
+        If usuario = "" Or clave = "" Then
+            MsgBox("Por favor ingrese los datos faltantes")
+        ElseIf tipo_usu = "" Then
+            MsgBox("Seleccione un tipo de trabajador")
         Else
-
             'Consulta Sql para el inicio de sesion'
             Dim consulta As String = "select * from usuarios where nombre='" & usuario & "' and clave =" & clave & " and tipo_usu ='" & tipo_usu & "';"
 
-
+            'llama procedmiento que Realiza conexion a mysql' 
+            Conectar()
 
             'Procedimientos para ejecutar consulta'
             Dim sqlcmd As New MySqlCommand(consulta, conexion)
             Dim dr As MySqlDataReader
             dr = sqlcmd.ExecuteReader
-
-
 
             If dr.Read() = True Then
                 If tipo_usu = "EMPLEADO" Then
@@ -51,15 +40,13 @@ Public Class Login
                     Me.Hide()
                     conexion.Close()
                 End If
-
             Else
-                MsgBox("Los datos ingresados son incorrectos, intente nuevamente")
+                MsgBox("Datos incorrectos intente nuevamente")
 
                 conexion.Close()
-
             End If
-        End If
 
+        End If
     End Sub
 
     Private Sub borrar_Click(sender As Object, e As EventArgs) Handles borrar.Click
@@ -76,19 +63,10 @@ Public Class Login
         End If
     End Sub
 
-
     Private Sub TextBox2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox2.KeyPress
         If Not IsNumeric(e.KeyChar) Then
             e.Handled = True
+            MsgBox("ingrese un dato numerico")
         End If
-    End Sub
-
-    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'llama procedmiento que Realiza conexion a mysql' 
-        Conectar()
-    End Sub
-
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs)
-        Conectar()
     End Sub
 End Class

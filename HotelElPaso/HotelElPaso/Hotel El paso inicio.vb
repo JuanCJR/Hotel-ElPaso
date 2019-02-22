@@ -84,7 +84,6 @@ Public Class Hotel_El_paso_inicio
     Private Sub EmpleadosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EmpleadosToolStripMenuItem.Click
         Empleados.MdiParent = Me
         Empleados.Show()
-
     End Sub
 
     Private Sub AdministracionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AdministracionToolStripMenuItem.Click
@@ -97,20 +96,38 @@ Public Class Hotel_El_paso_inicio
     End Sub
 
     Private Sub AcercaDeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AcercaDeToolStripMenuItem.Click
+        Acerca_de.MdiParent = Me
         Acerca_de.Show()
     End Sub
 
     Private Sub RegistroDeEmpleadosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistroDeEmpleadosToolStripMenuItem.Click
         Registro_de_empleados.MdiParent = Me
-
         Registro_de_empleados.Show()
     End Sub
 
+    Private Sub ReservacionesRealizadasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReservacionesRealizadasToolStripMenuItem.Click
+        Reservaciones_reali.MdiParent = Me
+        Reservaciones_reali.Show()
+    End Sub
+
     Private Sub SobreMiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SobreMiToolStripMenuItem.Click
+        Sobre_mi.MdiParent = Me
+        Sobre_mi.Show()
+    End Sub
+
+    Private Sub Hotel_El_paso_inicio_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        Dim x As MsgBoxResult
+        x = MsgBox("¿Desea salir del programa?", 4 + 32)
+        If x = MsgBoxResult.No Then
+            e.Cancel = True
+        End If
+    End Sub
+
+    Private Sub ToolTip_Popup(sender As Object, e As PopupEventArgs) Handles ToolTip.Popup
 
     End Sub
 
-    Private Sub RealizarReservaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RealizarReservaToolStripMenuItem.Click
+    Private Sub ToolStripStatusLabel_Click(sender As Object, e As EventArgs) Handles ToolStripStatusLabel.Click
 
     End Sub
 End Class

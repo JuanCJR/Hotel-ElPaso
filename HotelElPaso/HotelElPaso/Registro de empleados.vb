@@ -1,142 +1,61 @@
 ﻿Imports MySql.Data.MySqlClient
+
 Public Class Registro_de_empleados
 
-
     Private Sub Registro_de_empleados_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'me conecto a la base de datos'
         Conectar()
-
+        'llamo al sub llenagrid'
+        llenagrid()
+    End Sub
+    'creo el sub para llenar datagridview1'
+    Private Sub llenagrid()
+        'creamos dataset'
+        Dim ds As New DataSet
+        'creamos datatable'
+        Dim dt As New DataTable
+        'creamos consulta sql'
+        Dim strsql As String = "Select cod_usu, nombre, apellido, CI, correo, tlf, direccion, cargo, salario_bsf from empleados"
+        'creamos un adaptador mysql que necesita la consulta sql y la conexion a la base de datos'
+        Dim adp As New MySqlDataAdapter(strsql, conexion)
+        'creamos una tabla de nombre tabla'
+        ds.Tables.Add("tabla")
+        'el data llena la tabla de nombre "tabla" con la informacion que tiene el adaptador'
+        adp.Fill(ds.Tables("tabla"))
+        'decirle al datagrid que tome los valores de la consulta sql'
+        Me.DataGridView1.DataSource = ds.Tables("tabla")
+        Me.DataGridView1.Columns(0).HeaderText = " Codigo de Usuario"
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Registro_de_empleados2.Show()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If TextBox1.Text = "" Then
-            MsgBox("El campo ID no puede estar vacio", MsgBoxStyle.Critical, "Atencion")
-            TextBox1.Select()
+            llenagrid()
         Else
-            Dim ID As Integer
-            Dim nombre As String = ""
-            Dim apellido As String = ""
-            Dim ci As String = ""
-            Dim correo As String = ""
-            Dim tlf As String = ""
-            Dim direccion As String = ""
-            Dim cargo As String = ""
-            Dim salario As Integer
-            Dim sql As String = ""
-
-
-            ID = TextBox1.Text
-            nombre = TextBox2.Text
-            apellido = TextBox3.Text
-            ci = TextBox4.Text
-            correo = TextBox5.Text
-            tlf = TextBox6.Text
-            direccion = TextBox7.Text
-            cargo = TextBox8.Text
-            salario = TextBox9.Text
-
-            'Indicar tipo de entrada del comando sql
-            cmd.CommandType = CommandType.Text
-
-            'enlazar el comando con la conexion a la base de datos
-            cmd.Connection = conexion
-
-            'Definimos la consulta sql para insertar
-            sql = "INSERT INTO EMPLEADOS VALUES (" & ID & ",'" & nombre & "','" & apellido & "','" & ci & "','" & correo
-            sql = sql & "','" & tlf & "','" & direccion & "','" & cargo & "'," & salario & ")"
-            MsgBox(sql)
-
-            cmd.CommandText = sql
-
+            'llamamos a la funcion'
+            Me.DataGridView1.DataSource = ConsultaBuscar("Empleados", "cod_usu", TextBox1.Text).Tables("Tabla")
             Try
-                'Se utuliza el executenonquery para las inserciones
-
-                cmd.ExecuteNonQuery()
-                MsgBox("Registro insertado correctamente")
+                Me.DataGridView1.Rows(1).ToString()
             Catch ex As Exception
-                'mandar mensaje en caso de que hayan ID duplicados
-                If ex.ToString.Contains("Duplicate entry") Then
-                    MsgBox("El registro ya existe")
-                Else
-                    MsgBox(ex.ToString)
+                ex.ToString.Contains("fuera del intervalo")
+                MsgBox("El registro que intenta buscar no existe")
+
+                MsgBox(ex.ToString)
 
 
-                End If
             End Try
-
         End If
 
-
     End Sub
 
-    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
-
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Editar_empleado.Show()
     End Sub
 
-    Private Sub TextBox8_TextChanged(sender As Object, e As EventArgs) Handles TextBox8.TextChanged
-
-    End Sub
-
-    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
-
-    End Sub
-
-    Private Sub TextBox7_TextChanged(sender As Object, e As EventArgs) Handles TextBox7.TextChanged
-
-    End Sub
-
-    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
-
-    End Sub
-
-    Private Sub TextBox6_TextChanged(sender As Object, e As EventArgs) Handles TextBox6.TextChanged
-
-    End Sub
-
-    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
-
-    End Sub
-
-    Private Sub TextBox5_TextChanged(sender As Object, e As EventArgs) Handles TextBox5.TextChanged
-
-    End Sub
-
-    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
-
-    End Sub
-
-    Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
-
-    End Sub
-
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
-
-    End Sub
-
-    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
-
-    End Sub
-
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-
-    End Sub
-
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
-
-    End Sub
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-
-    End Sub
-
-    Private Sub TextBox9_TextChanged(sender As Object, e As EventArgs) Handles TextBox9.TextChanged
-
-    End Sub
-
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
-
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Borrar_empleado.Show()
     End Sub
 End Class
