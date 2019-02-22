@@ -67,7 +67,10 @@ Public Class Borrar_empleado
         TextBox9.Text = dr(8).ToString
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
         MsgBox(Me.DataGridView1.Columns(0).ToString())
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick_1(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
     End Sub
 End Class

@@ -28,9 +28,9 @@ Public Class Editar_reservacion
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim sql1 As String
 
-        sql1 = "UPDATE REGISTROS  SET NOMBRE ='" & TextBox2.Text & "',APELLIDO ='" & TextBox3.Text & "',"
-        sql1 = sql1 + "CI='" & TextBox4.Text & "' ,CORREO ='" & TextBox5.Text & "',tlf ='" & TextBox6.Text & "', DIRECCION = '" & TextBox7.Text & "',"
-        sql1 = sql1 + "TIPOHAB ='" & TextBox8.Text & "' WHERE COD_USU = '" & TextBox1.Text & " ')"
+        sql1 = "UPDATE REGISTROS SET NOMBRE ='" & TextBox2.Text & "' ,APELLIDO ='" & TextBox3.Text & "', "
+        sql1 = sql1 + "CI='" & TextBox4.Text & "', CORREO ='" & TextBox5.Text & "', tlf ='" & TextBox6.Text & "', DIRECCION = '" & TextBox7.Text & "', "
+        sql1 = sql1 + "TIPOHAB ='" & TextBox8.Text & "' WHERE COD_USU =" & TextBox1.Text
 
         MsgBox(sql1)
 
