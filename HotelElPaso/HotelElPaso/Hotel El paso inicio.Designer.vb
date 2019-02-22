@@ -133,6 +133,9 @@ Partial Class Hotel_El_paso_inicio
         Me.ToolStripStatusLabel.Size = New System.Drawing.Size(42, 17)
         Me.ToolStripStatusLabel.Text = "Estado"
         '
+        'ToolTip
+        '
+        '
         'MiCuentaToolStripMenuItem
         '
         Me.MiCuentaToolStripMenuItem.Name = "MiCuentaToolStripMenuItem"

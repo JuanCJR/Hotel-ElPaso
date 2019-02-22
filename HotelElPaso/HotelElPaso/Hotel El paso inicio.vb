@@ -122,4 +122,12 @@ Public Class Hotel_El_paso_inicio
             e.Cancel = True
         End If
     End Sub
+
+    Private Sub ToolTip_Popup(sender As Object, e As PopupEventArgs) Handles ToolTip.Popup
+
+    End Sub
+
+    Private Sub ToolStripStatusLabel_Click(sender As Object, e As EventArgs) Handles ToolStripStatusLabel.Click
+
+    End Sub
 End Class
